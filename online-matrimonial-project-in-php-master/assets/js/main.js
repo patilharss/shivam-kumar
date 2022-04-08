@@ -1,6 +1,6 @@
 /**
-* Template Name: Multi - v4.7.0
-* Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
+* Template Name: Presento - v3.7.0
+* Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -157,34 +157,11 @@
       }
     }
   });
-
   /**
-   * Preloader
+   * Clients Slider
    */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
-
-  /**
-   * Hero carousel indicators
-   */
-  let heroCarouselIndicators = select("#hero-carousel-indicators")
-  let heroCarouselItems = select('#heroCarousel .carousel-item', true)
-
-  heroCarouselItems.forEach((item, index) => {
-    (index === 0) ?
-    heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
-      heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
-  });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
+  new Swiper('.clients-slider', {
+    speed: 400,
     loop: true,
     autoplay: {
       delay: 5000,
@@ -198,13 +175,20 @@
     },
     breakpoints: {
       320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 40
+      },
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 60
+      },
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 80
+      },
+      992: {
+        slidesPerView: 6,
+        spaceBetween: 120
       }
     }
   });
@@ -261,6 +245,35 @@
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
+    }
+  });
+
+  /**
+   * Testimonials slider
+   */
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
     }
   });
 

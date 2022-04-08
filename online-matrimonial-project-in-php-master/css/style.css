@@ -1,9 +1,12 @@
+
+
+
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
 p {margin: 0;}
 html, body{
-	font-family: 'Ubuntu', sans-serif;
+	font-family:'Courier New', Courier, monospace;
 	font-size: 100%;
     background:#fff; 
 }
@@ -301,7 +304,7 @@ ul.nav_1 li.last{
 }
 .banner_info h3{
    color:#fff;
-   font-family: 'Oswald', sans-serif;
+   font-family: 'Poppins', sans-serif;
    font-size:4em;
    margin-bottom:30px;
 }
@@ -502,7 +505,7 @@ input#submit-btn {
 }
 .grid_1 h1, .grid_2 h2{
 	text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.5em;
     color: #000;
     margin-bottom: 0;
@@ -996,7 +999,7 @@ a.religion_1 {
 }
 .bg h3{
 	text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.5em;
     color: #fff;
     margin-bottom: 0;
@@ -1149,7 +1152,7 @@ span.divider {
 	color:#000;
 	font-size:1.5em;
 	margin-bottom:1em;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 table.table_working_hours {
     width: 100%;
@@ -1276,7 +1279,7 @@ ul.profile_item li.profile_item-img{
 	font-size:1.3em;
 	color:#000;
 	margin-bottom: 1em;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 ul.profile_item li.profile_item-desc h4, ul.profile_item li.profile_item-desc h5{
 	color:#c32143;
@@ -1356,7 +1359,7 @@ ul.login_details li a{
 	color:#000;
 	font-size:1.5em;
 	margin-bottom:1em;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 .paid_people {
     margin: 3em 0 0 0;
@@ -1365,7 +1368,7 @@ ul.login_details li a{
     font-size: 1.3em;
     color: #000;
     margin-bottom: 0.5em;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .slider h4{
 	color:#000;
@@ -1666,7 +1669,7 @@ a.photo_view:hover{
     color: #000;
     margin-bottom: 10px;
     font-size: 1.5em;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 ol.terms_list {
     padding-left: 20px;
@@ -1743,12 +1746,12 @@ ul.phone li.phone_right p{
 .members_box h1, .terms h2{
 	color:#000;
 	font-size:1.5em;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 .members_box2 h3{
 	color:#000;
 	font-size:2em;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 .members_box2 p{
 	color:#555;
@@ -1850,7 +1853,7 @@ i.icon_3{
 	color: #000;
     font-size:1.5em;
     font-weight: 400;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-bottom:10px;
 }
 .about_right p{
@@ -1907,7 +1910,7 @@ i.icon_3{
 	text-align: center;
     color: #fff;
     font-size:2.5em;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 1em;
 }
 .testi_grid:nth-child(2n+1) {
@@ -2191,7 +2194,7 @@ small.testi-meta1{
     text-align: center;
     color: #000;
     font-size: 2.5em;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 1em;
 }
 /* --services --*/
@@ -2200,7 +2203,7 @@ small.testi-meta1{
 	margin-bottom: 2em;
 }
 .page_header h1{
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Poppins', sans-serif;
     font-size: 2.5em;
     color: #000;
     margin-bottom:1em;

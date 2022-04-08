@@ -49,7 +49,7 @@ $(document).ready(function(){
 </head>
 <body>
 <!-- ============================  Navigation Start =========================== -->
- <?php include_once("includes/navigation.php");?>
+ <?php include_once("includes/new_nav.php");?>
 <!-- ============================  Navigation End ============================ -->
 <div class="grid_3">
   <div class="container">
@@ -85,11 +85,21 @@ $(document).ready(function(){
 		</div>
    </div><!-- End of inner navigation -->
    <div
-  </div>
 </div>
-
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <?php include_once("footer.php")?>
+
+
+
 <!-- FlexSlider -->
 <script defer src="js/jquery.flexslider.js"></script>
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
@@ -101,6 +111,9 @@ $(window).load(function() {
     controlNav: "thumbnails"
   });
 });
+
+
+
 </script>   
 </body>
 </html>	

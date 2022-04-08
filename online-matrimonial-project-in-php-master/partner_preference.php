@@ -76,7 +76,7 @@ $(document).ready(function(){
 </head>
 <body>
 <!-- ============================  Navigation Start =========================== -->
- <?php include_once("includes/navigation.php");?>
+ <?php include_once("includes/new_nav.php");?>
 <!-- ============================  Navigation End ============================ -->
 <div class="grid_3">
   <div class="container">
@@ -122,7 +122,7 @@ $(document).ready(function(){
 			   </ul>
 			   <form action="" method="post" name="partner">
 			   <div id="myTabContent" class="tab-content">
-				  <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+				  <div role="tabpanel" class="tab-pane show active" id="home" aria-labelledby="home-tab">
 				    <div class="tab_box">
 				    	<h1>My Ideal Partner would be</h1>
 				    	<p><textarea name="descr" rows="5" cols="150"><?php echo $descr;?></textarea></p>
@@ -265,4 +265,4 @@ $(document).ready(function(){
 </div>
 
 
-<?php include_once("footer.php");?>
+<?php include_once("new_footer.php");?>

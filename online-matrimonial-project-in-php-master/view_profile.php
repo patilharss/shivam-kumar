@@ -114,7 +114,7 @@ $(document).ready(function(){
 </head>
 <body>
 <!-- ============================  Navigation Start =========================== -->
- <?php include_once("includes/navigation.php");?>
+ <?php include_once("includes/new_nav.php");?>
 <!-- ============================  Navigation End ============================ -->
 <div class="grid_3">
   <div class="container">
@@ -142,7 +142,7 @@ $(document).ready(function(){
      </ul>
    </div>
    <div class="profile">
-   	 <div class="col-md-8 profile_left">
+   	 <div class="col-md-12 profile_left">
    	 	<h2>Profile Id : <?php echo $profileid;?></h2>
    	 	<div class="col_3">
    	        <div class="col-sm-4 row_2">
@@ -207,7 +207,7 @@ $(document).ready(function(){
 				  <li role="presentation"><a href="#profile1" role="tab" id="profile-tab1" data-toggle="tab" aria-controls="profile1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Partner Preference&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			   </ul>
 			   <div id="myTabContent" class="tab-content">
-				  <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+				  <div role="tabpanel" class="tab-pane active" id="home" aria-labelledby="home-tab">
 				    <div class="tab_box">
 				    	<h1>About Me.</h1>
 				    	<p><?php echo $aboutme; ?></p>
@@ -474,32 +474,7 @@ $descr=$row['descr'];
 			  <input type="submit" value="Go">
 		   </form>
         </div> -->
-        <div class="view_profile view_profile2">
-        	<h3>View Recent Profiles</h3>
-    <?php
-     $sql="SELECT * FROM customer ORDER BY profilecreationdate ASC";
-      $result=mysqlexec($sql);
-      $count=1;
-      while($row=mysqli_fetch_assoc($result)){
-            $profid=$row['cust_id'];
-          //getting photo
-          $sql="SELECT * FROM photos WHERE cust_id=$profid";
-          $result2=mysqlexec($sql);
-          $photo=mysqli_fetch_assoc($result2);
-          $pic=$photo['pic1'];
-          echo "<ul class=\"profile_item\">";
-            echo"<a href=\"view_profile.php?id={$profid}\">";
-              echo "<li class=\"profile_item-img\"><img src=\"profile/". $profid."/".$pic ."\"" . "class=\"img-responsive\" alt=\"\"/></li>";
-               echo "<li class=\"profile_item-desc\">";
-                  echo "<h4>" . $row['firstname'] . " " . $row['lastname'] . "</h4>";
-                  echo "<p>" . $row['age']. "Yrs," . $row['religion'] . "</p>";
-                  echo "<h5>" . "View Full Profile" . "</h5>";
-               echo "</li>";
-      echo "</a>";
-      echo "</ul>";
-      $count++;
-      }
-     ?>
+        
            
 </div>
        

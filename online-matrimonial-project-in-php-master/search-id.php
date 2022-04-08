@@ -48,7 +48,7 @@ $(document).ready(function(){
 </head>
 <body>
 <!-- ============================  Navigation Start =========================== -->
- <?php include_once("includes/navigation.php");?>
+ <?php include_once("includes/new_nav.php");?>
 <!-- ============================  Navigation End ============================ -->
 <div class="grid_3">
   <div class="container">
